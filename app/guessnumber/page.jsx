@@ -26,6 +26,14 @@ const Page = () => {
     }
   };
 
+  const handlePlayAgain = () => {
+    setNumberToGuess(Math.floor(Math.random() * 100) + 1);
+    setUserGuess('');
+    setHint('');
+    setAttempts(0);
+    setWin(false);
+  };
+
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center">
       <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
@@ -47,13 +55,22 @@ const Page = () => {
         <p className="text-lg mb-4">{hint}</p>
         <p className="text-lg mb-4">Attempts: {attempts}</p>
         {win && (
-          <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-            <div className="w-16 h-16 bg-green-500 rounded-full animate-spin"></div>
-            <div className="w-16 h-16 bg-green-500 rounded-full animate-spin"></div>
-            <div className="w-16 h-16 bg-green-500 rounded-full animate-spin"></div>
-          </div>
-        )}
+  <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
+    <div className="flex">
+      <div className="w-16 h-16 bg-green-500 rounded-full animate-spin"></div>
+      <div className="w-16 h-16 bg-green-500 rounded-full animate-spin"></div>
+      <div className="w-16 h-16 bg-green-500 rounded-full animate-spin"></div>
+    </div>
+    <button
+      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out mt-8"
+      onClick={handlePlayAgain}
+    >
+      Play Again
+    </button>
+  </div>
+)}
       </div>
+      
     </div>
   );
 };

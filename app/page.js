@@ -38,7 +38,7 @@ export default function Home() {
         {/* Add more games here */}
       </div>
 
-      <h3  className="mt-10 text-orange-300">All the games in here are made with the help of llama 3.1 meta AI model to test its capabilities. </h3>
+      <h3  className="text-center mt-10 text-orange-300">All the games in here are made with the help of llama 3.1 meta AI model to test its capabilities. </h3>
     </main>
   );
 }
