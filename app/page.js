@@ -20,21 +20,25 @@ export default function Home() {
       <p className="mb-4 text-green-300">play some games till our site develops...</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <Link href="/guessnumber">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className=" hover:border-2 border-green-300 bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold text-white text-center">
               Guess My Number
             </h3>
+            <p className="text-center">Lets see how many attempts you take!!</p>
           </div>
         </Link>
-        {/* <Link href="/guessnumber">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <Link href="/quizz">
+          <div className="hover:border-2 border-blue-200 bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold text-white text-center">
-              Guess My Number
+              Quizz
             </h3>
+            <p className="text-center">Lets see how smart your brain is !!</p>
           </div>
-        </Link> */}
+        </Link>
         {/* Add more games here */}
       </div>
+
+      <h3  className="mt-10 text-orange-300">All the games in here are made with the help of llama 3.1 meta AI model to test its capabilities. </h3>
     </main>
   );
 }
