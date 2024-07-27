@@ -11,30 +11,27 @@ export default function Page() {
   const [answerStatus, setAnswerStatus] = useState(null);
 
   useEffect(() => {
-    // Shuffle questions
-    const shuffled = questions.sort(() => Math.random() - 0.5).map(question => ({
-      ...question,
-      options: question.options.sort(() => Math.random() - 0.5), // Shuffle options
-    }));
-    setShuffledQuestions(shuffled);
+    setShuffledQuestions(questions.sort(() => Math.random() - 0.5));
   }, []);
 
-  const handleAnswer = (answer) => {
-    setSelectedAnswer(answer);
-    setShowResult(true);
-    if (answer === shuffledQuestions[currentQuestion].correctAnswer) {
-      setScore(score + 1);
-      setAnswerStatus('correct');
-    } else {
-      setAnswerStatus('incorrect');
-    }
-    setTimeout(() => {
-      setShowResult(false);
-      setCurrentQuestion(currentQuestion + 1);
-      setSelectedAnswer(null);
-      setAnswerStatus(null);
-    }, 1000);
-  };
+
+const handleAnswer = (answer) => {
+  setSelectedAnswer(answer);
+  setShowResult(true);
+  if (answer === shuffledQuestions[currentQuestion].correctAnswer) {
+    setScore(score + 1);
+    setAnswerStatus('correct');
+  } else {
+    setAnswerStatus('incorrect');
+  }
+  setTimeout(() => {
+    setShowResult(false);
+    setCurrentQuestion(currentQuestion + 1);
+    setSelectedAnswer(null);
+    setAnswerStatus(null);
+  }, 1000);
+};
+
 
   const getScoreMessage = () => {
     const percentage = (score / 10) * 100;
@@ -49,7 +46,7 @@ export default function Page() {
     } else if (percentage >= 35) {
       return 'Very poor! Improve your general knowledge!';
     } else {
-      return 'Go back to school idiot, you kindergartener';
+      return 'Go back to school idiot, you kindergardener';
     }
   };
 
@@ -58,10 +55,7 @@ export default function Page() {
     setCurrentQuestion(0);
     setSelectedAnswer(null);
     setShowResult(false);
-    setShuffledQuestions(questions.sort(() => Math.random() - 0.5).map(question => ({
-      ...question,
-      options: question.options.sort(() => Math.random() - 0.5), // Shuffle options again
-    })));
+    setShuffledQuestions(questions.sort(() => Math.random() - 0.5));
   };
 
   return (
@@ -75,21 +69,21 @@ export default function Page() {
             </h2>
             <div className="flex flex-col gap-4">
               {shuffledQuestions[currentQuestion].options.map((option, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleAnswer(option)}
-                  className={`border-2 border-blue-400 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out ${
-                    showResult
-                      ? answerStatus === 'correct' && selectedAnswer === option
-                        ? 'border-2 border-green-500 bg-green-500'
-                        : answerStatus === 'incorrect' && selectedAnswer === option
-                        ? 'border-2 border-red-500 bg-red-500'
-                        : ''
-                      : ''
-                  }`}
-                >
-                  {option}
-                </button>
+  <button
+  key={index}
+  onClick={() => handleAnswer(option)}
+  className={`border-2 border-blue-400 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out ${
+    showResult
+      ? answerStatus === 'correct' && selectedAnswer === option
+        ? 'border-2 border-green-500 bg-green-500'
+        : answerStatus === 'incorrect' && selectedAnswer === option
+        ? 'border-2 border-red-500 bg-red-500'
+        : ''
+      : ''
+  }`}
+>
+  {option}
+</button>
               ))}
             </div>
           </div>
@@ -111,5 +105,6 @@ export default function Page() {
         )}
       </div>
     </main>
+
   );
 }
