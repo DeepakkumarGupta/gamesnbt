@@ -35,6 +35,14 @@ export default function Home() {
             <p className="text-center">Lets see how smart your brain is !!</p>
           </div>
         </Link>
+        <Link href="/wof">
+          <div className="hover:border-2 border-blue-200 bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-bold text-white text-center">
+               Wheel of Fortune!
+            </h3>
+            <p className="text-center">Spin the Wheel and Play Along..</p>
+          </div>
+        </Link>
         {/* Add more games here */}
       </div>
 
