@@ -1,16 +1,14 @@
-
 export const questions = [
   {
     question: "What is the sum of 2 + 2?",
-    options: ["3", "4", "5", "6"],
+    options: ["5", "4", "6", "3"],
     correctAnswer: "4"
   },
   {
     question: "What is the capital of France?",
-    options: ["Paris", "London", "Berlin", "Rome"],
+    options: ["Rome", "Paris", "London", "Berlin"],
     correctAnswer: "Paris"
   },
-  // ... (98 more questions)
   {
     question: "What is the largest planet in our solar system?",
     options: ["Earth", "Saturn", "Jupiter", "Uranus"],
@@ -18,240 +16,312 @@ export const questions = [
   },
   {
     question: "What is the smallest country in the world?",
-    options: ["Vatican City", "Monaco", "Nauru", "Tuvalu"],
+    options: ["Monaco", "Nauru", "Vatican City", "Tuvalu"],
     correctAnswer: "Vatican City"
   },
-  // ... (95 more questions)
   {
     question: "What is the chemical symbol for gold?",
-    options: ["Ag", "Au", "Hg", "Pb"],
+    options: ["Hg", "Pb", "Ag", "Au"],
     correctAnswer: "Au"
   },
   {
     question: "What is the largest living species of lizard?",
-    options: ["Komodo dragon", "Saltwater crocodile", "Black mamba", "African elephant"],
+    options: ["Saltwater crocodile", "Black mamba", "African elephant", "Komodo dragon"],
     correctAnswer: "Komodo dragon"
   },
-  // ... (93 more questions)
   {
     question: "What is the highest temperature ever recorded on Earth?",
-    options: ["56.7°C", "58.3°C", "60.0°C", "61.1°C"],
+    options: ["61.1°C", "58.3°C", "60.0°C", "56.7°C"],
     correctAnswer: "56.7°C"
   },
   {
     question: "What is the deepest lake in the world?",
-    options: ["Lake Baikal", "Lake Tanganyika", "Lake Vostok", "Lake Issyk-Kul"],
+    options: ["Lake Vostok", "Lake Tanganyika", "Lake Baikal", "Lake Issyk-Kul"],
     correctAnswer: "Lake Baikal"
   },
-  // ... (91 more questions)
   {
     question: "What is the largest desert in the world?",
-    options: ["Sahara", "Gobi", "Mojave", "Atacama"],
+    options: ["Mojave", "Atacama", "Gobi", "Sahara"],
     correctAnswer: "Sahara"
   },
   {
     question: "What is the longest mountain range in South America?",
-    options: ["Andes", "Rocky Mountains", "Sierra Madre", "Cordillera"],
+    options: ["Rocky Mountains", "Sierra Madre", "Cordillera", "Andes"],
     correctAnswer: "Andes"
   },
-  // ... (89 more questions)
   {
     question: "What is the largest island in the Mediterranean Sea?",
-    options: ["Sicily", "Sardinia", "Corsica", "Crete"],
+    options: ["Sardinia", "Corsica", "Crete", "Sicily"],
     correctAnswer: "Sicily"
   },
   {
     question: "What is the highest waterfall in the world?",
-    options: ["Angel Falls", "Victoria Falls", "Iguazu Falls", "Niagara Falls"],
+    options: ["Victoria Falls", "Iguazu Falls", "Niagara Falls", "Angel Falls"],
     correctAnswer: "Angel Falls"
   },
-  // ... (87 more questions)
   {
     question: "What is the largest city in Australia?",
-    options: ["Sydney", "Melbourne", "Brisbane", "Perth"],
+    options: ["Melbourne", "Brisbane", "Perth", "Sydney"],
     correctAnswer: "Sydney"
   },
   {
     question: "What is the longest river in Asia?",
-    options: ["Yangtze River", "Yellow River", "Mekong River", "Ganges River"],
+    options: ["Yellow River", "Mekong River", "Ganges River", "Yangtze River"],
     correctAnswer: "Yangtze River"
   },
-  // ... (85 more questions)
   {
     question: "What is the smallest country in Africa?",
-    options: ["Seychelles", "Sao Tome and Principe", "Mauritius", "Cape Verde"],
+    options: ["Sao Tome and Principe", "Mauritius", "Cape Verde", "Seychelles"],
     correctAnswer: "Seychelles"
   },
   {
     question: "What is the largest city in Canada?",
-    options: ["Toronto", "Montreal", "Vancouver", "Calgary"],
+    options: ["Montreal", "Vancouver", "Calgary", "Toronto"],
     correctAnswer: "Toronto"
   },
-  // ... (83 more questions)
   {
     question: "What is the highest mountain peak in North America?",
-    options: ["Denali", "Mount Logan", "Pico de Orizaba", "Mount Whitney"],
+    options: ["Pico de Orizaba", "Mount Logan", "Mount Whitney", "Denali"],
     correctAnswer: "Denali"
   },
-  // ... (81 more questions)
   {
     question: "What is the largest city in South America?",
-    options: ["Sao Paulo", "Buenos Aires", "Lima", "Bogota"],
+    options: ["Buenos Aires", "Lima", "Bogota", "Sao Paulo"],
     correctAnswer: "Sao Paulo"
   },
   {
     question: "What is the longest river in Europe?",
-    options: ["Volga River", "Danube River", "Rhine River", "Elbe River"],
+    options: ["Danube River", "Rhine River", "Elbe River", "Volga River"],
     correctAnswer: "Volga River"
   },
   {
     question: "What is the highest mountain peak in Africa?",
-    options: ["Mount Kilimanjaro", "Mount Kenya", "Mount Stanley", "Mount Speke"],
+    options: ["Mount Kenya", "Mount Stanley", "Mount Speke", "Mount Kilimanjaro"],
     correctAnswer: "Mount Kilimanjaro"
   },
-  // ... (67 more questions)
   {
     question: "What is the largest island in the Caribbean Sea?",
-    options: ["Cuba", "Hispaniola", "Jamaica", "Puerto Rico"],
+    options: ["Hispaniola", "Jamaica", "Puerto Rico", "Cuba"],
     correctAnswer: "Cuba"
   },
   {
     question: "What is the longest river in South America?",
-    options: ["Amazon River", "Parana River", "Sao Francisco River", "Magdalena River"],
+    options: ["Parana River", "Sao Francisco River", "Magdalena River", "Amazon River"],
     correctAnswer: "Amazon River"
   },
-  // ... (65 more questions)
   {
     question: "What is the highest waterfall in South America?",
-    options: ["Angel Falls", "Iguazu Falls", "Kaieteur Falls", "Tugela Falls"],
+    options: ["Iguazu Falls", "Kaieteur Falls", "Tugela Falls", "Angel Falls"],
     correctAnswer: "Angel Falls"
   },
   {
     question: "What is the largest city in Asia?",
-    options: ["Tokyo", "Seoul", "Hong Kong", "Singapore"],
+    options: ["Seoul", "Hong Kong", "Singapore", "Tokyo"],
     correctAnswer: "Tokyo"
   },
-  // ... (63 more questions)
   {
     question: "What is the longest mountain range in Asia?",
-    options: ["Himalayan Mountains", "Karakoram Mountains", "Tian Shan Mountains", "Caucasus Mountains"],
+    options: ["Karakoram Mountains", "Tian Shan Mountains", "Caucasus Mountains", "Himalayan Mountains"],
     correctAnswer: "Himalayan Mountains"
   },
   {
     question: "What is the highest mountain peak in Europe?",
-    options: ["Mount Elbrus", "Mount Blanc", "Mount Matterhorn", "Mount Etna"],
+    options: ["Mount Blanc", "Mount Matterhorn", "Mount Etna", "Mount Elbrus"],
     correctAnswer: "Mount Elbrus"
   },
-  // ... (61 more questions)
   {
     question: "What is the largest city in North America?",
-    options: ["New York City", "Los Angeles", "Chicago", "Houston"],
+    options: ["Los Angeles", "Chicago", "Houston", "New York City"],
     correctAnswer: "New York City"
   },
   {
     question: "What is the longest river in North America?",
-    options: ["Mississippi River", "Colorado River", "Rio Grande", "Yukon River"],
+    options: ["Colorado River", "Rio Grande", "Yukon River", "Mississippi River"],
     correctAnswer: "Mississippi River"
   },
-  // ... (59 more questions)
   {
     question: "What is the smallest country in Oceania?",
-    options: ["Nauru", "Tuvalu", "Palau", "Marshall Islands"],
+    options: ["Tuvalu", "Palau", "Marshall Islands", "Nauru"],
     correctAnswer: "Nauru"
   },
   {
     question: "What is the largest city in Scandinavia?",
-    options: ["Stockholm", "Copenhagen", "Oslo", "Helsinki"],
+    options: ["Copenhagen", "Oslo", "Helsinki", "Stockholm"],
     correctAnswer: "Stockholm"
   },
   {
     question: "What is the highest mountain peak in South America?",
-    options: ["Aconcagua", "Ojos del Salado", "Monte Pissis", "Cerro Bonete"],
+    options: ["Ojos del Salado", "Monte Pissis", "Cerro Bonete", "Aconcagua"],
     correctAnswer: "Aconcagua"
   },
   {
     question: "What is the longest river in Australia?",
-    options: ["Murray River", "Darling River", "Cooper Creek", "Diamantina River"],
+    options: ["Darling River", "Cooper Creek", "Diamantina River", "Murray River"],
     correctAnswer: "Murray River"
   },
   {
     question: "What is the largest desert in Asia?",
-    options: ["Gobi Desert", "Taklamakan Desert", "Kyzylkum Desert", "Arabian Desert"],
+    options: ["Taklamakan Desert", "Kyzylkum Desert", "Arabian Desert", "Gobi Desert"],
     correctAnswer: "Gobi Desert"
   },
   {
     question: "What is the highest waterfall in Asia?",
-    options: ["Huangguoshu Waterfall", "Jiuzhaigou Waterfall", "Plitvice Waterfall", "Sutherland Waterfall"],
+    options: ["Jiuzhaigou Waterfall", "Plitvice Waterfall", "Sutherland Waterfall", "Huangguoshu Waterfall"],
     correctAnswer: "Huangguoshu Waterfall"
   },
   {
     question: "What is the largest city in the Middle East?",
-    options: ["Istanbul", "Tehran", "Cairo", "Dubai"],
+    options: ["Tehran", "Cairo", "Dubai", "Istanbul"],
     correctAnswer: "Istanbul"
   },
   {
     question: "What is the longest river in Africa?",
-    options: ["Nile River", "Congo River", "Niger River", "Zambezi River"],
+    options: ["Congo River", "Niger River", "Zambezi River", "Nile River"],
     correctAnswer: "Nile River"
   },
   {
     question: "What is the highest mountain peak in North America?",
-    options: ["Denali", "Mount Logan", "Pico de Orizaba", "Mount Whitney"],
+    options: ["Mount Logan", "Pico de Orizaba", "Mount Whitney", "Denali"],
     correctAnswer: "Denali"
   },
   {
     question: "What is the largest city in South America?",
-    options: ["Sao Paulo", "Buenos Aires", "Lima", "Bogota"],
+    options: ["Buenos Aires", "Lima", "Bogota", "Sao Paulo"],
     correctAnswer: "Sao Paulo"
   },
   {
     question: "What is the smallest country in South America?",
-    options: ["Suriname", "Uruguay", "Guyana", "French Guiana"],
+    options: ["Uruguay", "Guyana", "French Guiana", "Suriname"],
     correctAnswer: "Suriname"
   },
   {
     question: "What is the largest city in Eastern Europe?",
-    options: ["Moscow", "Istanbul", "Warsaw", "Bucharest"],
+    options: ["Istanbul", "Warsaw", "Bucharest", "Moscow"],
     correctAnswer: "Moscow"
   },
   {
     question: "What is the highest mountain peak in the Andes?",
-    options: ["Aconcagua", "Ojos del Salado", "Monte Pissis", "Cerro Bonete"],
+    options: ["Ojos del Salado", "Monte Pissis", "Cerro Bonete", "Aconcagua"],
     correctAnswer: "Aconcagua"
   },
   {
     question: "What is the longest river in Southeast Asia?",
-    options: ["Mekong River", "Chao Phraya River", "Irrawaddy River", "Salween River"],
+    options: ["Chao Phraya River", "Irrawaddy River", "Salween River", "Mekong River"],
     correctAnswer: "Mekong River"
   },
   {
     question: "What is the largest city in the Caribbean?",
-    options: ["Havana", "Santo Domingo", "Port-au-Prince", "San Juan"],
+    options: ["Santo Domingo", "Port-au-Prince", "San Juan", "Havana"],
     correctAnswer: "Havana"
   },
   {
     question: "What is the highest waterfall in South America?",
-    options: ["Angel Falls", "Iguazu Falls", "Kaieteur Falls", "Tugela Falls"],
+    options: ["Iguazu Falls", "Kaieteur Falls", "Tugela Falls", "Angel Falls"],
     correctAnswer: "Angel Falls"
   },
   {
     question: "What is the largest city in Central Asia?",
-    options: ["Astana", "Tashkent", "Bishkek", "Dushanbe"],
+    options: ["Astana", "Bishkek", "Dushanbe", "Tashkent"],
     correctAnswer: "Tashkent"
   },
   {
     question: "What is the longest river in Western Europe?",
-    options: ["Rhine River", "Danube River", "Loire River", "Seine River"],
+    options: ["Loire River", "Seine River", "Danube River", "Rhine River"],
     correctAnswer: "Rhine River"
   },
   {
     question: "What is the highest mountain peak in the Caucasus?",
-    options: ["Mount Elbrus", "Mount Kazbek", "Mount Shkhara", "Mount Dykh-Tau"],
+    options: ["Mount Kazbek", "Mount Shkhara", "Mount Dykh-Tau", "Mount Elbrus"],
     correctAnswer: "Mount Elbrus"
   },
   {
     question: "What is the largest city in the Balkans?",
-    options: ["Istanbul", "Bucharest", "Belgrade", "Sofia"],
+    options: ["Bucharest", "Belgrade", "Sofia", "Istanbul"],
     correctAnswer: "Istanbul"
   },
-];
+  {
+    question: "What is the longest river in South America?",
+    options: ["Parana River", "Sao Francisco River", "Magdalena River", "Amazon River"],
+    correctAnswer: "Amazon River"
+  },
+  {
+    question: "What is the highest mountain peak in the Andes?",
+    options: ["Ojos del Salado", "Monte Pissis", "Cerro Bonete", "Aconcagua"],
+    correctAnswer: "Aconcagua"
+  },
+  {
+    question: "What is the largest city in Scandinavia?",
+    options: ["Copenhagen", "Oslo", "Helsinki", "Stockholm"],
+    correctAnswer: "Stockholm"
+  },
+  {
+    question: "What is the longest river in Asia?",
+    options: ["Yellow River", "Mekong River", "Ganges River", "Yangtze River"],
+    correctAnswer: "Yangtze River"
+  },
+  {
+    question: "What is the smallest country in Africa?",
+    options: ["Sao Tome and Principe", "Mauritius", "Cape Verde", "Seychelles"],
+    correctAnswer: "Seychelles"
+  },
+  {
+    question: "What is the largest city in Canada?",
+    options: ["Montreal", "Vancouver", "Calgary", "Toronto"],
+    correctAnswer: "Toronto"
+  },
+  {
+    question: "What is the highest mountain peak in North America?",
+    options: ["Pico de Orizaba", "Mount Logan", "Mount Whitney", "Denali"],
+    correctAnswer: "Denali"
+  },
+  {
+    question: "What is the process by which plants convert sunlight into energy?",
+    options: ["Respiration", "Photosynthesis", "Decomposition", "Fermentation"],
+    correctAnswer: "Photosynthesis"
+  },
+  {
+    question: "What is the largest planet in our solar system?",
+    options: ["Earth", "Saturn", "Jupiter", "Uranus"],
+    correctAnswer: "Jupiter"
+  },
+  {
+    question: "What is the scientific term for the 'building blocks of life'?",
+    options: ["Cells", "Molecules", "Tissues", "Organisms"],
+    correctAnswer: "Cells"
+  },
+  {
+    question: "What is the process by which water moves through a plant, from the roots to the leaves?",
+    options: ["Respiration", "Transpiration", "Evaporation", "Condensation"],
+    correctAnswer: "Transpiration"
+  },
+  {
+    question: "What is the largest living species of lizard?",
+    options: ["Saltwater crocodile", "Black mamba", "African elephant", "Komodo dragon"],
+    correctAnswer: "Komodo dragon"
+  },
+  {
+    question: "What is the scientific term for the study of the structure of the Earth's crust?",
+    options: ["Geology", "Meteorology", "Oceanography", "Astronomy"],
+    correctAnswer: "Geology"
+  },
+  {
+    question: "What is the process by which an organism's genetic information is passed from one generation to the next?",
+    options: ["Mutation", "Genetic drift", "Natural selection", "Hereditary"],
+    correctAnswer: "Hereditary"
+  },
+  {
+    question: "What is the scientific term for the study of the universe and its origins?",
+    options: ["Cosmology", "Astronomy", "Geology", "Meteorology"],
+    correctAnswer: "Cosmology"
+  },
+  {
+    question: "What is the process by which an organism's body structure changes to adapt to its environment?",
+    options: ["Evolution", "Revolution", "Mutation", "Adaptation"],
+    correctAnswer: "Adaptation"
+  },
+  {
+    question: "What is the scientific term for the study of the behavior of living organisms?",
+    options: ["Biology", "Psychology", "Sociology", "Ethology"],
+    correctAnswer: "Ethology"
+  }
+]
