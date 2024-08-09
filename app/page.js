@@ -51,6 +51,14 @@ export default function Home() {
             <p className="text-center">Lets play Tic Tac Toe..!!</p>
           </div>
         </Link>
+        <Link href="/jump">
+          <div className="hover:border-2 border-violet-600 bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-bold text-white text-center">
+               Jump Jump
+            </h3>
+            <p className="text-center">Jump and doge the obstacle!!</p>
+          </div>
+        </Link>
         {/* Add more games here */}
       </div>
 
