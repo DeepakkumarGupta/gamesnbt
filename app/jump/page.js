@@ -104,7 +104,7 @@ export default function Game() {
   }, [checkCollision, isGameOver]);
 
   return (
-    <div className="relative w-[800px] h-[400px] bg-gray-100 border-2 border-gray-300 mx-auto my-20 overflow-hidden">
+    <div className="relative w-[90vw] h-[45vh] max-w-[800px] max-h-[400px] bg-gray-100 border-2 border-gray-300 mx-auto my-20 overflow-hidden">
       <div className="absolute top-2 left-2 text-lg text-gray-800">
         Score: {score}
       </div>
@@ -114,7 +114,7 @@ export default function Game() {
         </div>
       )}
       <div
-        className="absolute bottom-0 left-[50px] w-[50px] h-[40px] bg-green-500"
+        className="absolute bottom-0 left-[6vw] md:left-[50px] w-[8vw] h-[6vh] bg-green-500"
         style={{ transform: `translateY(${dinoY - 350}px)` }}
       >
         {/* Dino is a green square */}
@@ -124,12 +124,18 @@ export default function Game() {
           key={obstacle.id}
           className={`absolute ${
             obstacle.type === 'bird' ? 'bottom-[200px] bg-blue-500' : 'bottom-0 bg-red-500'
-          } w-[50px] h-[50px]`}
-          style={{ left: obstacle.position }}
+          } w-[8vw] h-[6vh]`}
+          style={{ left: `${(obstacle.position / 800) * 90}vw` }}
         >
           {/* Cactus is a red square, Bird is a blue square */}
         </div>
       ))}
+      <button
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-600 text-white rounded-md md:hidden"
+        onClick={handleJump}
+      >
+        Jump
+      </button>
     </div>
   );
 }
