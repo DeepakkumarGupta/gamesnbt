@@ -50,7 +50,7 @@ const Page = () => {
         </div>
       </div>
       <button onClick={spinWheel} className="px-4 py-2 z-10 bg-blue-500 mt-20 text-white rounded">
-        Spin the Whee11
+        Spin the Wheel
       </button>
       {spunLabel && (
         <div className="result text-white z-20">
